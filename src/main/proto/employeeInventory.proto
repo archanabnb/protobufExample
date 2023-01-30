@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package employee;
+
+option java_package = "com.employee";
+option java_multiple_files = true;
+option java_outer_classname = "EmployeeProto";
+
+message EmployeeDetailsResponse {
+  string message = 1 ;
+  string response_code = 2;
+}
+
+message EmployeeDetailsRequest {
+  int32 id = 1;
+  string name = 2;
+  int32 age = 3;
+  string designation = 4;
+}
